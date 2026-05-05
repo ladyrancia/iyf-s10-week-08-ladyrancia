@@ -279,15 +279,35 @@
 }
 
 .counter-demo button {
-  @extend .btn;
-  @extend .btn-secondary;
+  padding: 8px 16px;
+  border: 2px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+  background: var(--code-bg);
+  color: var(--text-h);
 }
 
-/* Toggle Demo */
-.toggle-demo {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+.counter-demo button:hover:not(:disabled) {
+  border-color: var(--accent);
+}
+
+.toggle-demo button {
+  padding: 8px 16px;
+  border: 2px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+  background: var(--code-bg);
+  color: var(--text-h);
+}
+
+.toggle-demo button:hover {
+  border-color: var(--accent);
 }
 
 /* Contact Form */
